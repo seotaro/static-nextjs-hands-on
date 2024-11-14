@@ -1,16 +1,15 @@
-import Image from "next/image";
+const BASEPATH = "/static-nextjs-hands-on";
 
 export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
+        <img
           className="dark:invert"
-          src="/next.svg"
+          src={`${BASEPATH}/next.svg`}
           alt="Next.js logo"
           width={180}
           height={38}
-          priority
         />
         <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
           <li className="mb-2">
@@ -30,9 +29,9 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Image
+            <img
               className="dark:invert"
-              src="/vercel.svg"
+              src={`${BASEPATH}/vercel.svg`}
               alt="Vercel logomark"
               width={20}
               height={20}
@@ -56,9 +55,9 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image
+          <img
             aria-hidden
-            src="/file.svg"
+            src={`${BASEPATH}/file.svg`}
             alt="File icon"
             width={16}
             height={16}
@@ -71,9 +70,9 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image
+          <img
             aria-hidden
-            src="/window.svg"
+            src={`${BASEPATH}/window.svg`}
             alt="Window icon"
             width={16}
             height={16}
@@ -86,9 +85,9 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Image
+          <img
             aria-hidden
-            src="/globe.svg"
+            src={`${BASEPATH}/globe.svg`}
             alt="Globe icon"
             width={16}
             height={16}
